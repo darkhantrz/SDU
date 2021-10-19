@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img id="logo" src="sdu_logo1.png" alt="sdu_logo"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Suleyman Demirel University</h1>
+            <p>Making your dreams a reality</p>
+            <a class="btn" href="contact.html">Visit Us To Know More</a>
+        </div>
+    </section>
+    
+    <!--------------------- Course --------------------->
+
+    <section class="faculty">
+        <h1>Available Faculties</h1>
+
+        <div class="row">
+            <div class="faculty-col">
+                <h3>Faculty of Engineering and Natural Sciences</h3>
+                <p>The Faculty of Engineering & Natural Sciences 
+                    prepares future specialists in IT and technical 
+                    areas. In our undergraduate specialties degree 
+                    programs, students become high-level specialists 
+                    with technical and management skills.</p>
+            </div>
+            <div class="faculty-col">
+                <h3>Faculty of Education and Humanities Sciences</h3>
+                <p>The Faculty of Education and Humanities offers 
+                    programs of English (TEFL/TESOL), Kazakh language, 
+                    and science teachers (STEM), including Humanities: 
+                    Translation Studies and Philology (Linguistics). 
+                    The medium of instruction is English.</p>
+            </div>
+            <div class="faculty-col">
+                <h3>Faculty of Law and <br>Social Sciences</h3>
+                <p>The Faculty of Law and Social Sciences is the 
+                    leading educational and scientific legal institution 
+                    in Kazakhstan. The scientists of the faculty are 
+                    implementing a large-scale program of research work 
+                    in various fields of legal science.</p>
+            </div>
+            <div class="faculty-col">
+                <h3>SDU Business <br>School</h3>
+                <p>Today SDU Business School is one of the leading 
+                    business schools in our country with a prestigious 
+                    international recognition both in research and 
+                    education. We continuously keep our programs 
+                    updated with industry requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- Campus ----------------------->
+
+    <section class="campus">
+        <h1>Our University</h1>
+        <div class="row">
+            <div class="campus-col">
+                <img src="sdu2.jpg" alt="sdu_campus">
+                <div class="layer">
+                    <h3>MAIN CAMPUS</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="sdu_dorm2.jpg" alt="sdu_campus">
+                <div class="layer">
+                    <h3>DORMITORY</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-------------------- Facilities -------------------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="sdu_library2.jpg" alt="">
+                <h3>Library</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="sdu_sport2.jpg" alt="">
+                <h3>Sports Field</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="sdu_canteen5.png" alt="">
+                <h3>Canteen</h3>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- Contact Us ------------------->
+
+    <section class="contact">
+        <h1>Need help?</h1>
+        <a class="btn" href="contact.html">CONTACT US</a>
+    </section>
+
+    <!------------------- Footer ------------------->
+
+    <section class="footer">
+        <hr>
+        <h3>Follow Us</h3>
+        <div class="icons">
+            <a href="https://www.instagram.com/sdukz/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sdukz/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/sdukz"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCAfCFHbt7ooyttq75uC0FuA"><i class="fa fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <!-------------- Javascript for menu --------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>

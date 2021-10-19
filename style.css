@@ -10,6 +10,7 @@
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(sdu2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -102,7 +103,7 @@ nav .fa {
     display: none;
 }
 
-/* -------------- Course --------------- */
+/* -------------- Faculty --------------- */
 
 .faculty {
     width: 95%;
@@ -192,7 +193,7 @@ h3 {
     width: 100%;
     font-weight: 500;
     color: white;
-    font-size: 26px;
+    font-size: 30px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -202,7 +203,7 @@ h3 {
 }
 
 .layer:hover h3 {
-    bottom: 49%;
+    bottom: 50%;
     opacity: 1;
 }
 
@@ -220,6 +221,7 @@ h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    transition: 0.5s;
 }
 
 .facilities-col img {
@@ -233,6 +235,10 @@ h3 {
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+}
+
+.facilities-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* ---------------- Contact Us ------------------ */
@@ -289,6 +295,7 @@ h3 {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(sdu2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     color: white;
 }
@@ -296,7 +303,7 @@ h3 {
 .about-us {
     flex-direction: column;
     width: 95%;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -377,7 +384,7 @@ h3 {
         display: block;
     }
     .nav-links {
-        position: absolute;
+        position: fixed;
         background: #a80e03;
         height: 100vh;
         width: 200px;
@@ -387,6 +394,9 @@ h3 {
         z-index: 2;
         transition: 1s;
         overflow-x: hidden;
+    }
+    .nav-links ul li a {
+        font-size: 27px;
     }
     nav .fa {
         display: block;
@@ -406,7 +416,7 @@ h3 {
     }
     .hr {
         margin: auto;
-        width: 250px;
+        width: 80%;
     }
     .about-col {
         margin-left: 20px;
@@ -417,12 +427,12 @@ h3 {
         font-size: 15px;
     }
     .about-col img {
-        margin-left: 55px;
+        margin-left: 20%;
         width: 60%;
         border-radius: 10px;
     }
     #footerrr {
-        width: 250px;
+        width: 80%;
         margin: auto;
     }
 }
